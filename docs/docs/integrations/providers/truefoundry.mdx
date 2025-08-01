@@ -40,9 +40,9 @@ Connect to TrueFoundry by updating the `ChatOpenAI` model in LangChain:
 from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(
-    api_key=TRUEFOUNDRY_API_KEY,
-    base_url=TRUEFOUNDRY_GATEWAY_BASE_URL,
-    model="openai-main/gpt-4o"   #similarly you can call any model from any model provider
+    api_key="TRUEFOUNDRY_API_KEY",
+    base_url="TRUEFOUNDRY_GATEWAY_BASE_URL",
+    model="openai-main/gpt-4o"   #similarly you can call any model from any model provider like anthropic/claude-4
 )
 
 llm.invoke("What is the meaning of life, universe and everything?")
